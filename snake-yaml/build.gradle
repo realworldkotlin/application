@@ -1,0 +1,11 @@
+dependencies {
+    compile kotlin_lib
+    compile "org.apache.commons:commons-lang3:3.4"
+    compile "commons-io:commons-io:2.5"
+    testCompile "org.springframework:spring-core:3.2.17.RELEASE"
+    testCompile "org.springframework:spring-beans:3.2.17.RELEASE"
+    testCompile "org.springframework:spring-context-support:3.2.17.RELEASE"
+    testCompile "org.apache.velocity:velocity:1.6.2"
+    testCompile "joda-time:joda-time:1.6"
+    testCompile junit
+}

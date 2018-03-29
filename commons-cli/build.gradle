@@ -1,0 +1,4 @@
+dependencies {
+    compile kotlin_lib
+    testCompile junit
+}

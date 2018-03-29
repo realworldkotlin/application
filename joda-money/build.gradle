@@ -1,0 +1,7 @@
+dependencies {
+    compile kotlin_lib
+    compile "org.joda:joda-convert:1.9.2"
+    compile "com.tngtech.java:junit-dataprovider:1.10.0"
+
+    testCompile junit
+}

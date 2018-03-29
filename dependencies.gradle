@@ -1,0 +1,11 @@
+ext {
+    ext.kotlin_version = '1.2.10'
+
+    kotlin_lib = [
+            "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    ]
+
+    junit = [
+            "junit:junit:4.12"
+    ]
+}

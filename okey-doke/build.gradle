@@ -1,0 +1,7 @@
+
+dependencies {
+    compile kotlin_lib
+    compile junit
+    compile 'org.jmock:jmock-junit4:2.6.0'
+    compile 'org.jmock:jmock-legacy:2.6.0'
+}
