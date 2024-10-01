@@ -1,6 +1,8 @@
 package org.hamcrest.core;
 
 import java.util.Arrays;
+import java.util.List;
+
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 
@@ -40,6 +42,7 @@ public class AnyOf<T> extends ShortcutCombination<T> {
      */
     @SafeVarargs
     public static <T> AnyOf<T> anyOf(Matcher<? super T>... matchers) {
-        return anyOf(Arrays.asList(matchers));
+        List<Matcher<? super T>> list = Arrays.asList(matchers);
+        return anyOf(list);
     }
 }
