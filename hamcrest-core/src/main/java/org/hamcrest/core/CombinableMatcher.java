@@ -58,7 +58,7 @@ public class CombinableMatcher<T> extends TypeSafeDiagnosingMatcher<T> {
         }
 
         public CombinableMatcher<X> and(Matcher<? super X> other) {
-            return new CombinableMatcher<>(first).and(other);
+            return new CombinableMatcher<X>(first).and(other);
         }
     }
 
@@ -79,7 +79,7 @@ public class CombinableMatcher<T> extends TypeSafeDiagnosingMatcher<T> {
         }
 
         public CombinableMatcher<X> or(Matcher<? super X> other) {
-            return new CombinableMatcher<>(first).or(other);
+            return new CombinableMatcher<X>(first).or(other);
         }
     }
 }

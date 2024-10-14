@@ -1,6 +1,8 @@
 package org.hamcrest.core;
 
 import java.util.Arrays;
+import java.util.List;
+
 import org.hamcrest.Description;
 import org.hamcrest.DiagnosingMatcher;
 import org.hamcrest.Matcher;
@@ -50,6 +52,7 @@ public class AllOf<T> extends DiagnosingMatcher<T> {
      */
     @SafeVarargs
     public static <T> Matcher<T> allOf(Matcher<? super T>... matchers) {
-        return allOf(Arrays.asList(matchers));
+        List<Matcher<? super T>> list = Arrays.asList(matchers);
+        return allOf(list);
     }
 }
